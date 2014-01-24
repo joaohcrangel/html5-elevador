@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="author" content="João Rangel" />
+	<meta name="description" content="Elevadores criados com HTML5, jQuery, Handlerbars.js, API de webcam para simular um espelho, transitions com CSS3 para animar o elevador subindo e descendo e abrindo as portas." />
+	<link href="css/elevador.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<script id="view-elevador" type="text/x-handlebars-template">
+		<div class="poco">
+			<div class="elevador andar1" data-andar="1">
+				<div class="porta portaL"></div>
+				<div class="porta portaR"></div>
+				<div class="letreiro">1</div>
+				<video class="espelho" autoplay></video>
+			</div>
+			<button class="botao botao4" data-andar="4"></button>
+			<button class="botao botao3" data-andar="3"></button>
+			<button class="botao botao2" data-andar="2"></button>
+			<button class="botao botao1" data-andar="1"></button>
+		</div>
+	</script>
+	<script src="js/jquery-2.0.3.min.js"></script>
+	<script src="js/handlebars-v1.1.2.js"></script>
+	<script src="js/elevador.js"></script>
+
+	<!-- Github Project - start -->
+	<a href="https://raw.github.com/joaohcrangel/html5-elevador"><img id="github" src="img/github.png"></a>
+	<!-- Github Project - end -->
+
+	<!-- Google Analytcs - start -->
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-25837840-1']);
+	  _gaq.push(['_setCampContentKey', 'Elevador HTML5']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	<!-- Google Analytcs - end -->
+</body>
+</html>
